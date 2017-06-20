@@ -1,0 +1,34 @@
+<section>
+  <form name="form" ng-submit="submitForm()">
+    <fieldset>
+      <legend>{{action}} reservation form</legend>
+
+      <div class="form-group">
+        <label>Hotel name</label>
+        <select
+            ng-disabled="isDisabled"
+            ng-model="selectedHotel"
+            ng-options="hotel as hotel.name for hotel in hotels"></select>
+      </div>
+
+      <div class="form-group">
+        <label>Rating</label>
+        <input type="radio" ng-model="reserve.rating" value="1">1&#9733;
+        <input type="radio" ng-model="reserve.rating" value="2">2&#9733;
+        <input type="radio" ng-model="reserve.rating" value="3">3&#9733;
+        <input type="radio" ng-model="reserve.rating" value="4">4&#9733;
+        <input type="radio" ng-model="reserve.rating" value="5">5&#9733;
+      </div>
+
+      <div class="form-group">
+        <label>Comments</label>
+        <textarea ng-model="reserve.comments"></textarea>
+      </div>
+
+      <div class="actions">
+        <label></label>
+        <button>{{action}} reserve</button>
+      </div>
+    </fieldset>
+  </form>
+<section>

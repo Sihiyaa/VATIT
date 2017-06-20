@@ -1,0 +1,19 @@
+{
+  "name": "Customer",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "reserves": {
+      "type": "hasMany",
+      "model": "Reserve",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

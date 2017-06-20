@@ -1,0 +1,15 @@
+<section>
+  <article ng-repeat="r in reserves.slice().reverse()">
+    <header>
+      <h1>{{r.date | date}} | {{r.hotel.name}}</h1>
+      <h2>{{r.customer.email}}</h2>
+    </header>
+
+    <p>{{r.rating}}&#9733; - {{r.comments}}</p>
+
+    <div class="actions" ng-show="currentUser">
+      <button ui-sref="edit-reserve({ id: r.id })">Edit Reservation</button>
+      <button a ui-sref="delete-reserve({ id: r.id })">Delete Reservation</button>
+    </div>
+  </article>
+</section>

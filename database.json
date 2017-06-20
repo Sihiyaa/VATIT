@@ -1,0 +1,42 @@
+{
+    "defaultEnv": { "ENV": "NODE_ENV" },
+    "asanda": {
+        "driver": "db",
+        "host": { "ENV": "HOTEL_DB_DEVELOPMENT_HOST" },
+        "port": { "ENV": "HOTEL_DB_DEVELOPMENT_PORT" },
+        "user": { "ENV": "HOTEL_DB_DEVELOPMENT_USER" },
+        "password": { "ENV": "HOTEL_DB_DEVELOPMENT_PASSWORD" },
+        "database": { "ENV": "HOTEL_DB_DEVELOPMENT_DATABASE" },
+        "multipleStatements": true
+    },
+    "asanda": {
+        "driver": "db",
+        "host": { "ENV": "HOTEL_DB_HOST" },
+        "port": { "ENV": "HOTEL_DB_PORT" },
+        "user": { "ENV": "HOTEL_DB_USER" },
+        "password": { "ENV": "HOTEL_DB_PASSWORD" },
+        "database": { "ENV": "HOTEL_DB_DATABASE" },
+        "multipleStatements": true
+    },
+   
+   
+    "test": {
+        "driver": "mysql",
+        "host": { "ENV": "HOTEL_DB_DEVELOPMENT_HOST" },
+        "port": { "ENV": "HOTEL_DB_DEVELOPMENT_PORT" },
+        "user": { "ENV": "HOTEL_DB_DEVELOPMENT_USER" },
+        "password": { "ENV": "HOTEL_DB_DEVELOPMENT_PASSWORD" },
+        "database": { "ENV": "HOTEL_DB_DEVELOPMENT_DATABASE" },
+        "multipleStatements": true
+    },
+
+    "local": {
+        "driver": "mysql",
+        "host": { "ENV": "MYSQL_LOCAL_HOST" },
+        "port": { "ENV": "MYSQL_LOCAL_PORT" },
+        "user": { "ENV": "MYSQL_LOCAL_USER" },
+        "password": { "ENV": "MYSQL_LOCAL_PASSWORD" },
+        "database": { "ENV": "HOTEL_DATABASE" },
+        "multipleStatements": true
+    }
+}
