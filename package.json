@@ -1,5 +1,5 @@
 {
-  "name": "loopback-hotel-reservation-api",
+  "name": "VATIT",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -31,5 +31,5 @@
     "url": ""
   },
   "license": "UNLICENSED",
-  "description": "loopback-hotel-reservation-api"
+  "description": "VATIT"
 }
